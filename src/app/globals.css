@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url('../assets/gota.png');
+  background-color: #181818;
+  background-size: cover;
+  height: 200vh;
+}
+
+@media screen and (min-width: 3000px) {
+  body {
+    padding-inline: calc(100dvw - 3000px);
+    background-color: #000000;
+  }
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
