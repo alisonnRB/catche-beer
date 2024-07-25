@@ -13,11 +13,26 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
-  background-image: url('../assets/gota.png');
+body {
+  position: relative;
   background-color: #181818;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../assets/gota.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  height: 200vh;
+  opacity: 0.18;
+  z-index: 1;
 }
 
 @media screen and (min-width: 3000px) {

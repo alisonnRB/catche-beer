@@ -13,6 +13,8 @@ module.exports = {
         "subMotion" : "#242424",
         "redCustom" : "#991A1A",
         "greenCustom" : "#45B049", 
+        "openGreen" : "#133A14",
+        "subText" : "#B5B5B5"
       },
       fontFamily: {
         'sans': ["K2D", "sans-serif"],
