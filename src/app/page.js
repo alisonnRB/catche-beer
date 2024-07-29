@@ -1,11 +1,19 @@
-import Header from "@/components/header";
-import Capa from "@/components/capa";
+import CardDrink from "@/components/cardDrink";
 
 export default function Home() {
   return (
-    <main className="relative z-10 self-center">
-      <Header />
-      <Capa />
-    </main>
+    <div className="w-full flex flex-col mt-[8em]">
+
+      <div className="w-[100%] flex justify-center items-center flex-wrap self-center gap-[5vw]">
+        <CardDrink />
+        <CardDrink />
+
+        <CardDrink />
+        <CardDrink />
+
+        <CardDrink />
+        <CardDrink />
+      </div>
+    </div>
   );
 }

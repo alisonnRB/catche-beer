@@ -7,7 +7,7 @@ export default function Capa() {
         <div className="flex w-full justify-around">
 
             <div className="w-1/2 flex ">
-                <h3 className="font-sans text-white font-bold mt-[2em] h-[60%] max-h-[60%] max-w-[65%] w-[65%] ml-8 title">
+                <h3 className="font-sans text-white font-bold h-[60%] max-h-[60%] max-w-[65%] w-[65%] ml-8 title">
                     ENTREGA DE BEBIDAS PARA QUEM QUER APROVEITAR SEU DIA DA MELHOR MANEIRA
                 </h3>
             </div>

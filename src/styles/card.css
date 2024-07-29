@@ -1,0 +1,47 @@
+.card{
+    height: 27vh;
+    padding-right: 5em;
+}
+
+.name{
+    font-size: 2em;
+}
+
+.ml{
+    font-size: 1.3em;
+}
+
+.price{
+    font-size: 1.7em;
+}
+
+.butonC{
+    font-size: 1.3em;
+    width: 90%;
+    height: 30%;
+}
+
+@media screen and (orientation: portrait){
+    .card{
+        height: 15vh;
+        padding-right: 2em;
+    }
+    
+    .name{
+        font-size: 1em;
+    }
+    
+    .ml{
+        font-size: .7em;
+    }
+    
+    .price{
+        font-size: .8em;
+    }
+    
+    .butonC{
+        font-size: .7em;
+        width: 90%;
+        height: 20%;
+    }
+}

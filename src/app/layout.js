@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header";
+import Capa from "@/components/capa";
+import Menu from "@/components/footerMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +14,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className="relative z-10 self-center">
+          <Header />
+          <Capa />
+          {children}
+          <Menu />
+        </main>
+      </body>
     </html>
   );
 }
