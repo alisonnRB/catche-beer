@@ -79,7 +79,7 @@ const drinks = {
         { nome: "Sidra de Framboesa", ml: "500ml", src: heinikenImg, price : "14,00" },
         { nome: "Sidra de Mirtilo", ml: "500ml", src: heinikenImg, price : "14,00" },
         { nome: "Sidra de Ameixa", ml: "500ml", src: heinikenImg, price : "14,00" },
-        { nome: "Sidra de Uva", ml: "500ml", src: "/assets/heiniken.png.jpg", price : "14,00" }
+        { nome: "Sidra de Uva", ml: "500ml", src: heinikenImg, price : "14,00" }
     ]
 };
 

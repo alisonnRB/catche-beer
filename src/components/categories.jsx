@@ -23,7 +23,7 @@ export default function Categories() {
                 <div className="bg-subMotion h-[90%] w-[80%] max-h-[800px] max-w-[1000px] flex flex-col justify-between py-[1.5em]">
                     <span className="flex justify-between items-center px-[2em]">
                         <h6 className="text-white font-semibold">CATEGORIAS</h6>
-                        <h6 className="text-redCustom font-semibold text-[1.3em] cursor-pointer">X</h6>
+                        <h6 className="text-redCustom font-semibold text-[1.3em] cursor-pointer" onClick={() => { setOpen(false) }}>X</h6>
                     </span>
 
                     <div className="flex flex-col gap-4 px-[2em]">
@@ -31,77 +31,77 @@ export default function Categories() {
                         <Link href={'/categoria/vinhos'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
                             VINHOS
 
-                            <Image 
+                            <Image
                                 src={arrow}
                                 objectFit="contain"
                                 className="max-h-[20px] max-w-[30px]"
                             />
                         </Link>
 
-                        <Link href={'/categoria/vinhos'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
-                            VINHOS
+                        <Link href={'/categoria/cervejas'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
+                            CERVEJAS
 
-                            <Image 
+                            <Image
                                 src={arrow}
                                 objectFit="contain"
                                 className="max-h-[20px] max-w-[30px]"
                             />
                         </Link>
 
-                        <Link href={'/categoria/vinhos'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
-                            VINHOS
+                        <Link href={'/categoria/chopes'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
+                            CHOPES
 
-                            <Image 
+                            <Image
                                 src={arrow}
                                 objectFit="contain"
                                 className="max-h-[20px] max-w-[30px]"
                             />
                         </Link>
 
-                        <Link href={'/categoria/vinhos'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
-                            VINHOS
+                        <Link href={'/categoria/refrigerantes'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
+                            REFRIGERANTES
 
-                            <Image 
+                            <Image
                                 src={arrow}
                                 objectFit="contain"
                                 className="max-h-[20px] max-w-[30px]"
                             />
                         </Link>
 
-                        <Link href={'/categoria/vinhos'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
-                            VINHOS
+                        <Link href={'/categoria/destilados'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
+                            DESTILADOS
 
-                            <Image 
+                            <Image
                                 src={arrow}
                                 objectFit="contain"
                                 className="max-h-[20px] max-w-[30px]"
                             />
                         </Link>
 
-                        <Link href={'/categoria/vinhos'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
-                            VINHOS
+                        <Link href={'/categoria/licores'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
+                            LICORES
 
-                            <Image 
+                            <Image
                                 src={arrow}
                                 objectFit="contain"
                                 className="max-h-[20px] max-w-[30px]"
                             />
                         </Link>
 
-                        <Link href={'/categoria/vinhos'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
-                            VINHOS
+                        <Link href={'/categoria/coqueteis'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
+                            COQUETEIS
 
-                            <Image 
+                            <Image
                                 src={arrow}
                                 objectFit="contain"
                                 className="max-h-[20px] max-w-[30px]"
                             />
                         </Link>
 
-                        <Link href={'/categoria/vinhos'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
-                            VINHOS
+                        <Link href={'/categoria/sidras'} className="bg-motion text-white font-semibold p-[1.2em] flex justify-between items-center">
+                            SIDRAS
 
-                            <Image 
+                            <Image
                                 src={arrow}
                                 objectFit="contain"
                                 className="max-h-[20px] max-w-[30px]"
