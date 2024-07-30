@@ -1,20 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import categories from "../assets/categories.png";
 import cart from "../assets/cart.png";
 import profile from "../assets/profile.png";
+
+import Categories from "./categories";
 
 export default function Menu() {
     return (
         <footer className="w-full h-[10dvh] mt-[20dvh] z-20 bg-subMotion flex justify-center items-center gap-[20%] self-center">
 
-            <Link href={'/cart'} className="h-full flex justify-center items-center">
-                <Image
-                    src={categories}
-                    className="h-[50%] object-contain cursor-pointer"
-                />
-            </Link>
+            <Categories />
 
             <Link href={'/cart'} className="h-full">
 
@@ -30,6 +26,8 @@ export default function Menu() {
                     className="h-[50%] w-max-[50%] object-contain cursor-pointer"
                 />
             </Link>
+
+            
         </footer>
     );
 }
