@@ -24,7 +24,7 @@ export default function CardCartManager({ item }) {
                     <p className="ml font-semibold text-white ">- {item.ml}</p>
                 </span>
 
-                <span className="flex h-[30%] text-white pt-2 gap-2">
+                <span className="flex h-[30%] text-white pt-2 gap-2 max-lg:justify-between">
                     <p>Quantidade:</p>
 
                     <span className="flex bg-bg h-[1.6em] items-center justify-between p-[0.5em] gap-2">
@@ -34,8 +34,8 @@ export default function CardCartManager({ item }) {
                     </span>
                 </span>
 
-                <span className="flex justify-between">
-                    <button className="px-[1em] font-semibold bg-white cursor-pointer" onClick={()=>{removeItemAllFromCart(item)}}>ABANDONAR</button>
+                <span className="flex justify-between items-center">
+                    <button className="px-[1em] py-[.5em] font-semibold bg-white cursor-pointer max-lg:text-[.8em]" onClick={()=>{removeItemAllFromCart(item)}}>ABANDONAR</button>
                     <h4 className="font-semibold text-greenCustom price scale-125">R$ {" " + ((parseInt(item.price) * item.quantity).toFixed(2)).replace('.',',')}</h4>
                 </span>
 
