@@ -10,10 +10,7 @@ const BestSellers = () => {
     return (
       <CardDrink
         key={item.nome}
-        name={item.nome}
-        ml={item.ml}
-        src={item.src}
-        price={item.price} // Certifique-se de que `price` está definido
+        item={item}
       />
     );
   });
