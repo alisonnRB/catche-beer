@@ -14,10 +14,7 @@ export default function Category({ params }) {
             let drink = drinks[params.tipo][i];
             let item = <CardDrink
                 key={drink.nome}
-                name={drink.nome}
-                ml={drink.ml}
-                src={drink.src}
-                price={drink.price}
+                item={drink}
             />
 
             list.push(item);

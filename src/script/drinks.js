@@ -23,7 +23,7 @@ const drinks = {
     ],
     chopes: [
         { nome: "Chopp Brahma", ml: "300ml", src: heinikenImg, price : "14,00" },
-        { nome: "Chopp Skol", ml: "300ml", src: "/assets/cheiniken.png", price : "14,00" },
+        { nome: "Chopp Skol", ml: "300ml", src: heinikenImg, price : "14,00" },
         { nome: "Chopp Antarctica", ml: "300ml", src: heinikenImg, price : "14,00" },
         { nome: "Chopp Eisenbahn", ml: "300ml", src: heinikenImg, price : "14,00" },
         { nome: "Chopp Devassa", ml: "300ml", src: heinikenImg, price : "14,00" },
