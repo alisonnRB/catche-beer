@@ -1,7 +1,32 @@
+'use client';
+
+import { useEffect, useState } from "react";
+
+import CardCartManager from "@/components/cardCartManager";
+import { useCart } from "@/script/cartContext";
+
 export default function Cart() {
+  const { cart, removeItemFromCart } = useCart();
+
+  const cartItens = () => {
+    const list = [];
+
+    for (let i = 0; i < cart.length; i++) {
+      let item = <CardCartManager item={cart[i]} />
+      list.push(item);
+    }
+
+    return list;
+  }
+
   return (
-    <main>
-      
+    <main className="relative z-10 self-center flex flex-col items-center h-screen">
+      <h1 className="text-white font-semibold text-[2em]">CARRINHO</h1>
+
+      <div className="flex flex-col items-center flex-wrap gap-4 w-full mt-12">
+        {cartItens()}
+      </div>
+
     </main>
   );
 };
