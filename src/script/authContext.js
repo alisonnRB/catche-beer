@@ -16,6 +16,7 @@ export const AuthProvider = ({ children }) => {
         const authed = localStorage.getItem('auth');
         if (authed) {
             setAuth(JSON.parse(authed));
+            setIsAuthenticated(true);
         }
     }, []);
 
@@ -31,7 +32,6 @@ export const AuthProvider = ({ children }) => {
             localStorage.setItem('auth', JSON.stringify(infos))
             return true;
         } catch {
-            console.log(auth)
             return false;
         }
     };
@@ -40,9 +40,7 @@ export const AuthProvider = ({ children }) => {
         Authenticate();
         if (auth.phone == phone) {
             setIsAuthenticated(true);
-        } else {
-            setIsAuthenticated(false);
-        }
+        } 
     }
 
     return (
