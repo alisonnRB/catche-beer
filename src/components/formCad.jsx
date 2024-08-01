@@ -1,12 +1,11 @@
-
-
-
 'use client';
 
 import { useState } from "react";
+import { useAuth } from "@/script/authContext";
 
 export default function FormCad() {
     const [erro, setErro] = useState('')
+    const { Cadastrar } = useAuth();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -22,27 +21,30 @@ export default function FormCad() {
             setErro("O campo de ddd está vazio");
         } else if (!phone) {
             setErro("O campo de telefone está vazio");
-        } else if (parseInt(ddd)) {
+        } else if (!parseInt(ddd)) {
             setErro("O campo de ddd deve conter apenas números");
-        } else if (parseInt(phone)) {
+        } else if (!parseInt(phone)) {
             setErro("O campo de telefone deve conter apenas números");
-        } else if (nome) {
+        } else if (!nome) {
             setErro("O campo de nome está vazio");
-        } else if (endereco) {
+        } else if (!endereco) {
             setErro("O campo de endereço está vazio");
-        } else if (number) {
+        } else if (!number) {
             setErro("O campo de número está vazio");
         }
 
         const infos = { phone: ddd + " " + phone, nome: nome, endereco: endereco, number: number, complemento: complemento }
-        Cadastrar(infos);
+        if (Cadastrar(infos)) {
+            alert('Cadastro criado com sucesso!')
+            window.location.href = '/auth/login';
+        }
     }
 
     return (
         <form className="flex flex-col gap-4" onSubmit={(e) => { handleSubmit(e) }}>
 
             <span className="flex flex-col gap-1">
-                <label for="phone">Número de celular</label>
+                <label htmlFor="phone">Número de celular</label>
                 <span className="flex justify-between" id="phone">
                     <input type="text" name="ddd" placeholder="(51)" className="px-[.2em] w-[20%] text-center num" />
                     <input type="text" name="phone" placeholder="999999999" className="px-[.2em] text-center w-[79%]" />
@@ -51,14 +53,14 @@ export default function FormCad() {
 
 
             <span className="flex flex-col gap-1">
-                <label for="nome">Nome</label>
+                <label htmlFor="nome">Nome</label>
                 <span>
                     <input type="text" name="name" id="nome" className="px-[.2em] w-full" />
                 </span>
             </span>
 
             <span className="flex flex-col gap-1">
-                <label for="endereco">Endereço</label>
+                <label htmlFor="endereco">Endereço</label>
                 <span>
                     <input type="text" id="endereco" name="endereco" className="px-[.2em] w-full" />
                 </span>
@@ -66,12 +68,12 @@ export default function FormCad() {
 
             <span className="flex justify-between">
                 <span className="flex flex-col gap-1  w-[30%]">
-                    <label for="number">Número</label>
+                    <label htmlFor="number">Número</label>
                     <input type="text" id="number" name="number" className="px-[.2em] w-full" />
                 </span>
 
                 <span className="flex flex-col gap-1 w-[65%]">
-                    <label for="complemento">Complemento (opcional)</label>
+                    <label htmlFor="complemento">Complemento (opcional)</label>
                     <input type="text" id="complemento" name="complemento" className="px-[.2em] w-full " />
                 </span>
             </span>
