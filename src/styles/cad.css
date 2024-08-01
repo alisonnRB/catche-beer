@@ -1,0 +1,14 @@
+form label{
+    color: #B5B5B5;
+}
+
+form input{
+    min-height: 3.5em;
+    border: none;
+    outline: none;
+}
+
+.num{
+    border-right: .2em solid #181818;
+    margin-right: .2em;
+}
