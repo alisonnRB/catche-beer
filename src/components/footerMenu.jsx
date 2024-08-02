@@ -1,33 +1,28 @@
-import Image from "next/image";
 import Link from "next/link";
 
-import cart from "../assets/cart.png";
-import profile from "../assets/profile.png";
+
+import { AuthProvider } from "@/script/authContext";
 
 import Categories from "./categories";
+import ProfileAuth from "./profileAuth";
+import CartIcon from "./cartIcon";
 
 export default function Menu() {
     return (
-        <footer className="w-full h-[10dvh] mt-[20dvh] z-20 bg-subMotion flex justify-center items-center gap-[20%] self-center">
+        <AuthProvider>
+            <footer className="w-full h-[10dvh] mt-[20dvh] z-20 bg-subMotion flex justify-center items-center gap-[20%] self-center">
 
-            <Categories />
+                <Categories />
 
-            <Link href={'/cart'} className="h-full">
+                <Link href={'/cart'} className="h-full">
+                    <CartIcon />
+                </Link>
 
-                <Image
-                    src={cart}
-                    className="h-[130%] object-contain relative bottom-[40%] cursor-pointer"
-                />
-            </Link>
+                <Link href={'/auth/login'} className="h-full flex justify-center items-center">
+                    <ProfileAuth />
+                </Link>
 
-            <Link href={'/cart'} className="h-full flex justify-center items-center">
-                <Image
-                    src={profile}
-                    className="h-[50%] w-max-[50%] object-contain cursor-pointer"
-                />
-            </Link>
-
-            
-        </footer>
+            </footer>
+        </AuthProvider>
     );
 }
