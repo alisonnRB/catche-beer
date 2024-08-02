@@ -4,7 +4,7 @@ export const getStoreStatus = () => {
   const currentMinute = now.getMinutes();
 
   // Horário de funcionamento da loja
-  const storeHours = { openHour: 9, openMinute: 0, closeHour: 17, closeMinute: 27 };
+  const storeHours = { openHour: 7, openMinute: 0, closeHour: 20, closeMinute: 30 };
 
   const isStoreOpen = (hours) => {
     return (currentHour > hours.openHour || (currentHour === hours.openHour && currentMinute >= hours.openMinute)) &&
