@@ -9,6 +9,7 @@ export default function CartIcon() {
     return (
         <>
             <Image
+                alt="Carrinho de compras da CATCHE BEER delivery"
                 src={cart}
                 className="h-[130%] object-contain relative bottom-[40%] cursor-pointer"
             />

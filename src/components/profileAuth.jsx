@@ -5,11 +5,12 @@ import profile from "../assets/profile.png";
 import { useAuth } from "@/script/authContext";
 
 export default function ProfileAuth() {
-    const {isAuthenticated} = useAuth();
+    const { isAuthenticated } = useAuth();
 
     return (
         <>
             <Image
+                alt="Imagem de perfil e autenticação da CACTHE BEER DELIVERY"
                 src={profile}
                 className="h-[50%] w-max-[50%] object-contain cursor-pointer"
             />

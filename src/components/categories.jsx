@@ -14,6 +14,7 @@ export default function Categories() {
         <>
             <Image
                 src={categories}
+                alt="Tabela de categorias de bebidas da CACTHE BEER DELIVERY"
                 className="h-[50%] object-contain cursor-pointer"
                 onClick={() => { setOpen(true) }}
             />
@@ -33,6 +34,7 @@ export default function Categories() {
 
                             <Image
                                 src={arrow}
+                                alt="seta para categoria de bebidas da CACTHE BEER DELIVERY"
                                 objectFit="contain"
                                 className="max-h-[20px] max-w-[30px]"
                             />

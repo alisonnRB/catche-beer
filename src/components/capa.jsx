@@ -14,6 +14,7 @@ export default function Capa() {
 
             <div className="h-full w-1/2 flex justify-end">
                 <Image
+                    alt="Imagem representativa de bebidas fornecidas pela CATCH BEER"
                     src={capa}
                     className="max-h-[100dvh]"
                 />

@@ -9,6 +9,7 @@ export default function CardDrink({ item }) {
             <span className="h-full flex justify-center items-center w-max-[30%] min-w-[30%]">
                 <Image
                     src={item.src}
+                    alt="Imagem de bebida disponivel para compra na CACTHE BEER DELIVERY"
                     className="h-[80%] w-full object-contain"
                     width={100}
                     height={150}
