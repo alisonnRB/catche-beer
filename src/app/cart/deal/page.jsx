@@ -70,7 +70,7 @@ export default function Deal() {
 
                     <p className="text-redCustom">{erro}</p>
                     <button type="submit" className={"bg-white w-full hover:bg-motion py-[.5em] text-[1.2em] font-semibold"}>FINALIZAR</button>
-                    <Link href={'./cart'}>
+                    <Link href={'/cart'}>
                         <button className={"bg-white w-full hover:bg-motion py-[.5em] text-[1.2em] font-semibold"}>VOLTAR AO CARRINHO</button>
                     </Link>
 
