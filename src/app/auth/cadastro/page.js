@@ -6,7 +6,7 @@ export default function Cadastro() {
 
     return (
         <main className="h-[100vh] w-[100vw] bg-bg z-20 relative flex flex-col justify-center items-center">
-            <div className="flex flex-col justify-between items-center h-[90%]">
+            <div className="flex flex-col justify-between items-center h-[90%] portrait:w-[90%]">
 
                 <span className="flex justify-around w-full">
                     <Link href={'/auth/login'} className="text-subText font-semibold text-[1.3em]">

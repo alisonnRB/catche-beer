@@ -35,7 +35,7 @@ export default function Deal() {
     return (
         <div className="h-screen w-[100%] z-20 fixed bottom-0 left-0 flex justify-center items-center bg-bg">
 
-            <span className="h-[90%] min-w-[500px] max-w-[100%] flex flex-col justify-around">
+            <span className="h-[90%] landscape:min-w-[400px] max-w-[90vw] flex flex-col justify-around portrait:items-center">
 
 
                 <h1 className="text-white text-[2em]">FINALIZANDO PEDIDO</h1>
