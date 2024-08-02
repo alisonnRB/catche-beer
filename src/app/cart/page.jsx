@@ -2,7 +2,6 @@
 
 import CardCartManager from "@/components/cardCartManager";
 import { useCart } from "@/script/cartContext";
-import { AuthProvider } from "@/script/authContext";
 import Resume from "@/components/resume";
 
 export default function Cart() {
@@ -20,7 +19,6 @@ export default function Cart() {
   }
 
   return (
-    <AuthProvider>
       <main className="relative z-10 self-center flex flex-col items-center min-h-screen portrait:pb-[50dvh] pb-5">
 
         <div className="flex flex-col items-center flex-wrap gap-8 w-full mt-12">
@@ -33,6 +31,5 @@ export default function Cart() {
         <Resume />
 
       </main>
-    </AuthProvider>
   );
 };

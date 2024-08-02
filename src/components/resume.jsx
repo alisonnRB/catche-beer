@@ -11,7 +11,7 @@ export default function Resume() {
     const [open, setOpen] = useState(false);
 
     const loginVerify = () => {
-        if(total == 10.50){
+        if(total < 11){
 
         }else if (!isAuthenticated) {
             setOpen(true);
